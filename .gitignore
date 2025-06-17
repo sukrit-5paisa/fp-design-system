@@ -62,3 +62,28 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment files
+.env.staging
+
+# Security files
+*_SETUP.md
+*SECURITY*.md
+*FIREBASE*.md
+*GITHUB_PAGES*.md
