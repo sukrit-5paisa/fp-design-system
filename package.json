@@ -1,0 +1,40 @@
+{
+  "name": "fp-design-system",
+  "version": "1.0.0",
+  "description": "FP Design System - A comprehensive design system for FP applications, built with Flutter and showcased using Widgetbook",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "node scripts/build-web.js",
+    "build": "flutter build web --release",
+    "build:secure": "npm run prebuild && npm run build",
+    "deploy": "firebase deploy --only hosting",
+    "build:deploy": "npm run build:secure && npm run deploy",
+    "serve": "firebase serve --only hosting",
+    "test": "flutter test",
+    "clean": "flutter clean && rm -rf build/",
+    "setup": "cp .env.example .env && echo 'Please update .env with your Firebase credentials'",
+    "build:github-pages": "npm run build:secure",
+    "deploy:github-pages": "./deploy-github-pages.sh"
+  },
+  "keywords": [
+    "flutter",
+    "design-system",
+    "widgetbook",
+    "firebase",
+    "typography",
+    "components",
+    "github-pages"
+  ],
+  "author": "FP Design Team",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^13.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "firebase": "^10.7.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
