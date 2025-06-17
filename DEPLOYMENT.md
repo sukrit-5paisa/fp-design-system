@@ -4,8 +4,7 @@
 
 ### Prerequisites
 - GitHub repository created
-- Firebase project configured
-- Firebase credentials available
+- Flutter project configured
 
 ### Steps
 
@@ -13,21 +12,10 @@
    - Go to repository Settings → Pages
    - Set Source to "GitHub Actions"
 
-2. **Add Firebase Secrets**
-   - Go to Settings → Secrets and variables → Actions
-   - Add these secrets (get values from Firebase Console):
-     - `FIREBASE_API_KEY`
-     - `FIREBASE_AUTH_DOMAIN`
-     - `FIREBASE_DATABASE_URL`
-     - `FIREBASE_PROJECT_ID`
-     - `FIREBASE_STORAGE_BUCKET`
-     - `FIREBASE_MESSAGING_SENDER_ID`
-     - `FIREBASE_APP_ID`
-     - `FIREBASE_MEASUREMENT_ID`
-
-3. **Trigger Deployment**
+2. **Trigger Deployment**
    - Go to Actions tab
    - Run "Deploy to GitHub Pages" workflow
+   - Or push to main branch to trigger automatic deployment
 
 ### App URL
 Your app will be available at:
@@ -35,7 +23,23 @@ Your app will be available at:
 https://[username].github.io/[repository-name]/
 ```
 
+### Build Process
+The GitHub Actions workflow will:
+1. Set up Flutter environment
+2. Install dependencies
+3. Build the Flutter web app
+4. Deploy to GitHub Pages
+
+### Local Development
+```bash
+# Run locally
+flutter run -d web-server --web-port 8080
+
+# Build for production
+flutter build web --release
+```
+
 ### Security Notes
-- Never commit `.env` files or files containing secrets
-- Use GitHub Secrets for sensitive data
-- Rotate API keys regularly 
+- No external dependencies or API keys required
+- Simple and secure deployment process
+- All assets are bundled with the app 

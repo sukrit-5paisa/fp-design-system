@@ -24,12 +24,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
-        
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
@@ -39,40 +33,10 @@ jobs:
     - name: Install dependencies
       run: |
         flutter pub get
-        npm install
-        
-    - name: Check Firebase secrets
-      run: |
-        echo "Checking Firebase secrets..."
-        if [ -z "${{ secrets.FIREBASE_API_KEY }}" ]; then
-          echo "❌ FIREBASE_API_KEY is missing"
-          exit 1
-        fi
-        if [ -z "${{ secrets.FIREBASE_AUTH_DOMAIN }}" ]; then
-          echo "❌ FIREBASE_AUTH_DOMAIN is missing"
-          exit 1
-        fi
-        if [ -z "${{ secrets.FIREBASE_PROJECT_ID }}" ]; then
-          echo "❌ FIREBASE_PROJECT_ID is missing"
-          exit 1
-        fi
-        echo "✅ All required Firebase secrets are present"
-        
-    - name: Create .env file
-      run: |
-        echo "FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }}" >> .env
-        echo "FIREBASE_AUTH_DOMAIN=${{ secrets.FIREBASE_AUTH_DOMAIN }}" >> .env
-        echo "FIREBASE_DATABASE_URL=${{ secrets.FIREBASE_DATABASE_URL }}" >> .env
-        echo "FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }}" >> .env
-        echo "FIREBASE_STORAGE_BUCKET=${{ secrets.FIREBASE_STORAGE_BUCKET }}" >> .env
-        echo "FIREBASE_MESSAGING_SENDER_ID=${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}" >> .env
-        echo "FIREBASE_APP_ID=${{ secrets.FIREBASE_APP_ID }}" >> .env
-        echo "FIREBASE_MEASUREMENT_ID=${{ secrets.FIREBASE_MEASUREMENT_ID }}" >> .env
-        echo "✅ Created .env file with Firebase configuration"
         
     - name: Build Flutter web app
       run: |
-        npm run build:secure
+        flutter build web --release
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
