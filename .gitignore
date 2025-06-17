@@ -29,6 +29,7 @@ migrate_working_dir/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
 /build/
@@ -44,20 +45,25 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Firebase related
+# Firebase
 .firebase/
 firebase-debug.log
 firestore-debug.log
 ui-debug.log
-firebase-config.js
+
+# Environment files
 .env
 .env.local
 .env.production
+.env.staging
 
-# Generated files with sensitive data
-web/index.html
+# Security files
+*_SETUP.md
+*SECURITY*.md
+*FIREBASE*.md
+*GITHUB_PAGES*.md
 
-# Node.js related
+# Node modules
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -79,11 +85,5 @@ yarn-error.log*
 ehthumbs.db
 Thumbs.db
 
-# Environment files
-.env.staging
-
-# Security files
-*_SETUP.md
-*SECURITY*.md
-*FIREBASE*.md
-*GITHUB_PAGES*.md
+# Allow web/index.html to be tracked
+!web/index.html
