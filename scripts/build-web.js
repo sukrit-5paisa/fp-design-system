@@ -28,7 +28,12 @@ const missingVars = requiredVars.filter(varName => !process.env[varName]);
 
 if (missingVars.length > 0) {
   console.error('❌ Missing required environment variables:', missingVars);
-  console.error('Please check your .env file');
+  console.error('Please add these secrets to your GitHub repository:');
+  console.error('Go to: Settings → Secrets and variables → Actions');
+  console.error('Add the following secrets:');
+  missingVars.forEach(varName => {
+    console.error(`  - ${varName}`);
+  });
   process.exit(1);
 }
 
