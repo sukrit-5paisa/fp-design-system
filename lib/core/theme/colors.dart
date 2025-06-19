@@ -99,6 +99,29 @@ class MaterialLightColors {
 
   /// Brand fixed color
   Color get brandFixed => const Color(0xFF525D6D); // Color.Primary.Dimmer
+
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'background': background,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverseSurface': inverseSurface,
+    'inverseOnSurface': inverseOnSurface,
+    'brandFixed': brandFixed,
+  };
 }
 
 /// Material colors for dark mode
@@ -164,6 +187,29 @@ class MaterialDarkColors {
 
   /// Brand fixed color
   Color get brandFixed => const Color(0xFF6B6880); // Color.Primary.Dimmer
+
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'background': background,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverseSurface': inverseSurface,
+    'inverseOnSurface': inverseOnSurface,
+    'brandFixed': brandFixed,
+  };
 }
 
 /// Primary colors
@@ -220,6 +266,27 @@ class PrimaryColors {
 
   /// Inverse color
   Color get inverse => const Color(0xFFBAE4FF); // Primary.900
+
+  /// Returns all color tokens in this group as a map
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+  };
 }
 
 /// Primary colors for dark mode
@@ -276,6 +343,27 @@ class PrimaryDarkColors {
 
   /// Inverse color
   Color get inverse => const Color(0xFFA6D4FF); // Darker version of Primary.900
+
+  /// Returns all color tokens in this group as a map
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+  };
 }
 
 /// Secondary colors
@@ -332,6 +420,27 @@ class SecondaryColors {
 
   /// Inverse color
   Color get inverse => const Color(0xFFBDEDFF); // Secondary.900
+
+  /// Returns all color tokens in this group as a map
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+  };
 }
 
 /// Secondary colors for dark mode
@@ -388,6 +497,27 @@ class SecondaryDarkColors {
 
   /// Inverse color
   Color get inverse => const Color(0xFFA6E4FF); // Darker version of Secondary.900
+
+  /// Returns all color tokens in this group as a map
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+  };
 }
 
 /// Tertiary colors
@@ -444,6 +574,27 @@ class TertiaryColors {
 
   /// Inverse color
   Color get inverse => const Color(0xFFE9E4FF); // Tertiary.900
+
+  /// Returns all color tokens in this group as a map
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+  };
 }
 
 /// System colors (positive, critical, warning, info)
@@ -477,6 +628,26 @@ class _PositiveColors {
   final Color outline = const Color(0xCC5CD880);
   final Color outlineVariant = const Color(0x4D5CD880);
   final Color inverse = const Color(0xFFDFFDE1);
+
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+  };
 }
 
 /// Critical colors
@@ -500,6 +671,26 @@ class _CriticalColors {
   final Color outline = const Color(0xCCFF375F);
   final Color outlineVariant = const Color(0x4DFF375F);
   final Color inverse = const Color(0xFFFBDCDD);
+
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+  };
 }
 
 /// Warning colors
@@ -523,6 +714,26 @@ class _WarningColors {
   final Color outline = const Color(0xCCFFBD00);
   final Color outlineVariant = const Color(0x4DFFBD00);
   final Color inverse = const Color(0xFFFFF4B8);
+
+  Map<String, Color> get allColors => {
+    'primary': primary,
+    'primaryDim': primaryDim,
+    'onPrimary': onPrimary,
+    'onPrimaryVariant': onPrimaryVariant,
+    'onSurface': onSurface,
+    'onSurfaceVariant': onSurfaceVariant,
+    'surfaceBrighter': surfaceBrighter,
+    'surfaceBright': surfaceBright,
+    'surface': surface,
+    'surfaceDim': surfaceDim,
+    'surfaceDimmer': surfaceDimmer,
+    'containerLow': containerLow,
+    'container': container,
+    'containerHigh': containerHigh,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+  };
 }
 
 /// Info colors
@@ -542,6 +753,22 @@ class _InfoColors {
   final Color outlineVariant = const Color(0xFF0D6EFD);
   final Color inverse = const Color(0xFF1A212A);
   final Color onInfo = const Color(0xFFFFFFFF);
+
+  Map<String, Color> get allColors => {
+    'info': info,
+    'container': container,
+    'containerLow': containerLow,
+    'containerHigh': containerHigh,
+    'onSurface': onSurface,
+    'fixed': fixed,
+    'fixedDim': fixedDim,
+    'onFixed': onFixed,
+    'onFixedVariant': onFixedVariant,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+    'onInfo': onInfo,
+  };
 }
 
 /// Accent colors (sunset, gold, teal, magenta, fuchsia)
@@ -549,45 +776,63 @@ class AccentColors {
   const AccentColors();
 
   /// Sunset color
-  Color get sunset => _SunsetColors.sunset;
+  Color get sunset => SunsetColors.sunset;
   /// Gold color
-  Color get gold => _GoldColors.gold;
+  Color get gold => GoldColors.gold;
   /// Teal color
-  Color get teal => _TealColors.teal;
+  Color get teal => TealColors.teal;
   /// Magenta color
-  Color get magenta => _MagentaColors.magenta;
+  Color get magenta => MagentaColors.magenta;
   /// Fuchsia color
-  Color get fuchsia => _FuchsiaColors.fuchsia;
+  Color get fuchsia => FuchsiaColors.fuchsia;
 
   /// Sunset colors
-  static const sunsetColors = _SunsetColors();
-  static Color get sunsetContainer => _SunsetColors.container;
-  static Color get sunsetOnSunset => _SunsetColors.onSunset;
+  static const sunsetColors = SunsetColors();
+  static Color get sunsetContainer => SunsetColors.container;
+  static Color get sunsetOnSunset => SunsetColors.onSunset;
 
   /// Gold colors
-  static const goldColors = _GoldColors();
-  static Color get goldContainer => _GoldColors.container;
-  static Color get goldOnGold => _GoldColors.onGold;
+  static const goldColors = GoldColors();
+  static Color get goldContainer => GoldColors.container;
+  static Color get goldOnGold => GoldColors.onGold;
 
   /// Teal colors
-  static const tealColors = _TealColors();
-  static Color get tealContainer => _TealColors.container;
-  static Color get tealOnTeal => _TealColors.onTeal;
+  static const tealColors = TealColors();
+  static Color get tealContainer => TealColors.container;
+  static Color get tealOnTeal => TealColors.onTeal;
 
   /// Magenta colors
-  static const magentaColors = _MagentaColors();
-  static Color get magentaContainer => _MagentaColors.container;
-  static Color get magentaOnMagenta => _MagentaColors.onMagenta;
+  static const magentaColors = MagentaColors();
+  static Color get magentaContainer => MagentaColors.container;
+  static Color get magentaOnMagenta => MagentaColors.onMagenta;
 
   /// Fuchsia colors
-  static const fuchsiaColors = _FuchsiaColors();
-  static Color get fuchsiaContainer => _FuchsiaColors.container;
-  static Color get fuchsiaOnFuchsia => _FuchsiaColors.onFuchsia;
+  static const fuchsiaColors = FuchsiaColors();
+  static Color get fuchsiaContainer => FuchsiaColors.container;
+  static Color get fuchsiaOnFuchsia => FuchsiaColors.onFuchsia;
+
+  Map<String, Color> get allColors => {
+    'sunset': sunset,
+    'gold': gold,
+    'teal': teal,
+    'magenta': magenta,
+    'fuchsia': fuchsia,
+    'sunsetContainer': sunsetContainer,
+    'sunsetOnSunset': sunsetOnSunset,
+    'goldContainer': goldContainer,
+    'goldOnGold': goldOnGold,
+    'tealContainer': tealContainer,
+    'tealOnTeal': tealOnTeal,
+    'magentaContainer': magentaContainer,
+    'magentaOnMagenta': magentaOnMagenta,
+    'fuchsiaContainer': fuchsiaContainer,
+    'fuchsiaOnFuchsia': fuchsiaOnFuchsia,
+  };
 }
 
 /// Sunset colors
-class _SunsetColors {
-  const _SunsetColors();
+class SunsetColors {
+  const SunsetColors();
 
   /// Sunset color
   static const Color sunset = Color(0xFFFF6B6B);
@@ -604,11 +849,28 @@ class _SunsetColors {
   static const Color outlineVariant = Color(0xFFFF6B6B);
   static const Color inverse = Color(0xFF1A212A);
   static const Color onSunset = Color(0xFFFFFFFF);
+
+  Map<String, Color> get allColors => {
+    'sunset': sunset,
+    'container': container,
+    'containerLow': containerLow,
+    'containerHigh': containerHigh,
+    'onContainer': onContainer,
+    'onSurface': onSurface,
+    'fixed': fixed,
+    'fixedDim': fixedDim,
+    'onFixed': onFixed,
+    'onFixedVariant': onFixedVariant,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+    'onSunset': onSunset,
+  };
 }
 
 /// Gold colors
-class _GoldColors {
-  const _GoldColors();
+class GoldColors {
+  const GoldColors();
 
   /// Gold color
   static const Color gold = Color(0xFFFFD700);
@@ -625,11 +887,28 @@ class _GoldColors {
   static const Color outlineVariant = Color(0xFFFFD700);
   static const Color inverse = Color(0xFF1A212A);
   static const Color onGold = Color(0xFFFFFFFF);
+
+  Map<String, Color> get allColors => {
+    'gold': gold,
+    'container': container,
+    'containerLow': containerLow,
+    'containerHigh': containerHigh,
+    'onContainer': onContainer,
+    'onSurface': onSurface,
+    'fixed': fixed,
+    'fixedDim': fixedDim,
+    'onFixed': onFixed,
+    'onFixedVariant': onFixedVariant,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+    'onGold': onGold,
+  };
 }
 
 /// Teal colors
-class _TealColors {
-  const _TealColors();
+class TealColors {
+  const TealColors();
 
   /// Teal color
   static const Color teal = Color(0xFF20B2AA);
@@ -646,11 +925,28 @@ class _TealColors {
   static const Color outlineVariant = Color(0xFF20B2AA);
   static const Color inverse = Color(0xFF1A212A);
   static const Color onTeal = Color(0xFFFFFFFF);
+
+  Map<String, Color> get allColors => {
+    'teal': teal,
+    'container': container,
+    'containerLow': containerLow,
+    'containerHigh': containerHigh,
+    'onContainer': onContainer,
+    'onSurface': onSurface,
+    'fixed': fixed,
+    'fixedDim': fixedDim,
+    'onFixed': onFixed,
+    'onFixedVariant': onFixedVariant,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+    'onTeal': onTeal,
+  };
 }
 
 /// Magenta colors
-class _MagentaColors {
-  const _MagentaColors();
+class MagentaColors {
+  const MagentaColors();
 
   /// Magenta color
   static const Color magenta = Color(0xFFFF00FF);
@@ -667,11 +963,28 @@ class _MagentaColors {
   static const Color outlineVariant = Color(0xFFFF00FF);
   static const Color inverse = Color(0xFF1A212A);
   static const Color onMagenta = Color(0xFFFFFFFF);
+
+  Map<String, Color> get allColors => {
+    'magenta': magenta,
+    'container': container,
+    'containerLow': containerLow,
+    'containerHigh': containerHigh,
+    'onContainer': onContainer,
+    'onSurface': onSurface,
+    'fixed': fixed,
+    'fixedDim': fixedDim,
+    'onFixed': onFixed,
+    'onFixedVariant': onFixedVariant,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+    'onMagenta': onMagenta,
+  };
 }
 
 /// Fuchsia colors
-class _FuchsiaColors {
-  const _FuchsiaColors();
+class FuchsiaColors {
+  const FuchsiaColors();
 
   /// Fuchsia color
   static const Color fuchsia = Color(0xFFFF00FF);
@@ -688,6 +1001,23 @@ class _FuchsiaColors {
   static const Color outlineVariant = Color(0xFFFF00FF);
   static const Color inverse = Color(0xFF1A212A);
   static const Color onFuchsia = Color(0xFFFFFFFF);
+
+  Map<String, Color> get allColors => {
+    'fuchsia': fuchsia,
+    'container': container,
+    'containerLow': containerLow,
+    'containerHigh': containerHigh,
+    'onContainer': onContainer,
+    'onSurface': onSurface,
+    'fixed': fixed,
+    'fixedDim': fixedDim,
+    'onFixed': onFixed,
+    'onFixedVariant': onFixedVariant,
+    'outline': outline,
+    'outlineVariant': outlineVariant,
+    'inverse': inverse,
+    'onFuchsia': onFuchsia,
+  };
 }
 
 /// Miscellaneous colors (shadows, scrims, etc.)
@@ -707,6 +1037,39 @@ class MiscColors {
 
   /// Black fixed color
   Color get blackFixed => const Color(0xFF000000);
+
+  Map<String, Color> get allColors => {
+    'shadow': shadow,
+    'glow': glow,
+    'whiteFixed': whiteFixed,
+    'blackFixed': blackFixed,
+  };
+
+  Map<String, Color> get scrimColors => {
+    'scrim0': scrim.scrim0,
+    'scrim10': scrim.scrim10,
+    'scrim30': scrim.scrim30,
+    'scrim50': scrim.scrim50,
+    'scrim70': scrim.scrim70,
+    'scrim90': scrim.scrim90,
+    'scrim100': scrim.scrim100,
+    'modeScrim0': scrim.modeScrim0,
+    'modeScrim10': scrim.modeScrim10,
+    'modeScrim30': scrim.modeScrim30,
+    'modeScrim50': scrim.modeScrim50,
+    'modeScrim70': scrim.modeScrim70,
+    'modeScrim90': scrim.modeScrim90,
+    'modeScrim100': scrim.modeScrim100,
+    'oppositeScrim0': scrim.oppositeScrim0,
+    'oppositeScrim10': scrim.oppositeScrim10,
+    'oppositeScrim30': scrim.oppositeScrim30,
+    'oppositeScrim50': scrim.oppositeScrim50,
+    'oppositeScrim70': scrim.oppositeScrim70,
+    'oppositeScrim90': scrim.oppositeScrim90,
+    'oppositeScrim100': scrim.oppositeScrim100,
+    'light': scrim.light,
+    'dark': scrim.dark,
+  };
 }
 
 /// Scrim colors with different opacities
