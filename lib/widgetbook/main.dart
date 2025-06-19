@@ -310,7 +310,6 @@ class FPDesignWidgetbook extends StatelessWidget {
             Devices.ios.iPadPro11Inches,
             Devices.android.samsungGalaxyS20,
           ],
-          initialDevice: Devices.ios.iPhone13,
         ),
         TextScaleAddon(
           scales: [1.0, 1.5, 2.0],
