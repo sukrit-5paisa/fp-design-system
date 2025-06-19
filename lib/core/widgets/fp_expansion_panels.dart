@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // EXPANSION PANEL
@@ -378,7 +379,7 @@ class FPExpansionPanelHelpers {
         trailing: trailing,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(FPSpacing.lg),
         child: Text(content),
       ),
       isExpanded: isExpanded,
@@ -423,7 +424,7 @@ class FPExpansionPanelHelpers {
         trailing: trailing,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(FPSpacing.lg),
         child: content,
       ),
       isExpanded: isExpanded,

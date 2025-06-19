@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 enum FPTextFieldVariant { filled, outlined }
 
@@ -179,8 +180,8 @@ class _FPTextFieldState extends State<FPTextField> {
       errorBorder: _getErrorBorder(colorScheme),
       focusedErrorBorder: _getFocusedErrorBorder(colorScheme),
       contentPadding: widget.contentPadding ?? const EdgeInsets.symmetric(
-        horizontal: 16,
-        vertical: 12,
+        horizontal: FPSpacing.md,
+        vertical: FPSpacing.sm,
       ),
       isDense: widget.isDense,
       isCollapsed: widget.isCollapsed,
@@ -449,8 +450,8 @@ class FPFilledTextField extends StatelessWidget {
           ),
         ),
         contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 16,
+          horizontal: FPSpacing.md,
+          vertical: FPSpacing.sm,
         ),
       ),
     );
@@ -556,8 +557,8 @@ class FPOutlinedTextField extends StatelessWidget {
           ),
         ),
         contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16,
-          vertical: 16,
+          horizontal: FPSpacing.md,
+          vertical: FPSpacing.sm,
         ),
       ),
     );

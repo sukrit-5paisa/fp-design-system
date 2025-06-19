@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 /// FP Modal Bottom Sheet
 class FPModalBottomSheet extends StatelessWidget {
@@ -35,7 +36,7 @@ class FPModalBottomSheet extends StatelessWidget {
     final colorScheme = theme.colorScheme;
 
     return Container(
-      padding: padding ?? const EdgeInsets.all(16),
+      padding: padding ?? const EdgeInsets.all(FPSpacing.lg),
       decoration: BoxDecoration(
         color: backgroundColor ?? colorScheme.surface,
         borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
@@ -50,11 +51,11 @@ class FPModalBottomSheet extends StatelessWidget {
                 color: colorScheme.onSurface,
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: FPSpacing.lg),
           ],
           Flexible(child: child),
           if (actions != null) ...[
-            const SizedBox(height: 16),
+            const SizedBox(height: FPSpacing.lg),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: actions!,
@@ -101,7 +102,7 @@ class FPStandardBottomSheet extends StatelessWidget {
     final colorScheme = theme.colorScheme;
 
     return Container(
-      padding: padding ?? const EdgeInsets.all(16),
+      padding: padding ?? const EdgeInsets.all(FPSpacing.lg),
       decoration: BoxDecoration(
         color: backgroundColor ?? colorScheme.surface,
       ),
@@ -115,11 +116,11 @@ class FPStandardBottomSheet extends StatelessWidget {
                 color: colorScheme.onSurface,
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: FPSpacing.lg),
           ],
           Flexible(child: child),
           if (actions != null) ...[
-            const SizedBox(height: 16),
+            const SizedBox(height: FPSpacing.lg),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: actions!,

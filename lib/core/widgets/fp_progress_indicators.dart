@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // LINEAR PROGRESS INDICATOR
@@ -229,7 +230,7 @@ class FPProgressWithLabel extends StatelessWidget {
               ),
           ],
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: FPSpacing.sm),
         if (value != null)
           FPDeterminateProgress(
             value: value!,

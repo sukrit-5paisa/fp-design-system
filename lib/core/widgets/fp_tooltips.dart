@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // TOOLTIP
@@ -49,7 +50,7 @@ class FPTooltip extends StatelessWidget {
 
     return Tooltip(
       height: height,
-      padding: padding ?? const EdgeInsets.all(12),
+      padding: padding ?? const EdgeInsets.all(FPSpacing.sm),
       margin: margin,
       decoration: decoration,
       message: message,
@@ -154,7 +155,7 @@ class FPRichTooltip extends StatelessWidget {
 
     return Tooltip(
       height: height,
-      padding: padding ?? const EdgeInsets.all(12),
+      padding: padding ?? const EdgeInsets.all(FPSpacing.sm),
       margin: margin,
       decoration: decoration ?? richMessage,
       richMessage: TextSpan(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // ALERT DIALOG
@@ -46,7 +47,7 @@ class FPAlertDialog extends StatelessWidget {
       backgroundColor: backgroundColor ?? colorScheme.surface,
       surfaceTintColor: surfaceTintColor,
       elevation: elevation,
-      insetPadding: insetPadding as EdgeInsets?,
+      insetPadding: (insetPadding ?? const EdgeInsets.all(FPSpacing.lg)) as EdgeInsets?,
       clipBehavior: clipBehavior,
       shape: shape,
       alignment: alignment,
@@ -94,7 +95,7 @@ class FPSimpleDialog extends StatelessWidget {
       backgroundColor: backgroundColor ?? colorScheme.surface,
       surfaceTintColor: surfaceTintColor,
       elevation: elevation,
-      insetPadding: insetPadding as EdgeInsets?,
+      insetPadding: (insetPadding ?? const EdgeInsets.all(FPSpacing.lg)) as EdgeInsets?,
       clipBehavior: clipBehavior,
       shape: shape,
       alignment: alignment,

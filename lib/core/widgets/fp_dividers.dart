@@ -1,4 +1,5 @@
- import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // DIVIDER
@@ -126,7 +127,7 @@ class FPSectionDivider extends StatelessWidget {
 
     if (title != null) {
       return Padding(
-        padding: margin ?? const EdgeInsets.symmetric(vertical: 16),
+        padding: margin ?? const EdgeInsets.symmetric(vertical: FPSpacing.lg),
         child: Row(
           children: [
             Expanded(
@@ -188,7 +189,7 @@ class FPSpacedDivider extends StatelessWidget {
     this.indent,
     this.endIndent,
     this.color,
-    this.verticalSpacing = 16,
+    this.verticalSpacing = FPSpacing.lg,
   });
 
   @override
@@ -275,7 +276,7 @@ class FPDividerHelpers {
     double? indent,
     double? endIndent,
     Color? color,
-    double verticalSpacing = 16,
+    double verticalSpacing = FPSpacing.lg,
   }) {
     return FPSpacedDivider(
       height: height,

@@ -1,4 +1,5 @@
- import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // BANNER
@@ -54,13 +55,13 @@ class FPBanner extends StatelessWidget {
       ),
       clipBehavior: clipBehavior,
       child: Padding(
-        padding: padding ?? const EdgeInsets.all(16),
+        padding: padding ?? const EdgeInsets.all(FPSpacing.lg),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             if (showLeadingIcon && (leadingIcon != null || bannerIcon != null)) ...[
               leadingIcon ?? bannerIcon!,
-              const SizedBox(width: 12),
+              const SizedBox(width: FPSpacing.md),
             ],
             Expanded(
               child: Text(
@@ -189,7 +190,7 @@ class FPBannerWithActions extends StatelessWidget {
       ),
       clipBehavior: clipBehavior,
       child: Padding(
-        padding: padding ?? const EdgeInsets.all(16),
+        padding: padding ?? const EdgeInsets.all(FPSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -198,7 +199,7 @@ class FPBannerWithActions extends StatelessWidget {
               children: [
                 if (showLeadingIcon && (leadingIcon != null || bannerIcon != null)) ...[
                   leadingIcon ?? bannerIcon!,
-                  const SizedBox(width: 12),
+                  const SizedBox(width: FPSpacing.md),
                 ],
                 Expanded(
                   child: Text(
@@ -211,11 +212,11 @@ class FPBannerWithActions extends StatelessWidget {
               ],
             ),
             if (actions.isNotEmpty) ...[
-              const SizedBox(height: 12),
+              const SizedBox(height: FPSpacing.md),
               Row(
                 mainAxisAlignment: actionsAlignment,
                 children: actions.map((action) => Padding(
-                  padding: const EdgeInsets.only(left: 8),
+                  padding: const EdgeInsets.only(left: FPSpacing.md),
                   child: action,
                 )).toList(),
               ),

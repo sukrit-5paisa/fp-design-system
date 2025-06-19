@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // SEARCH BAR
@@ -160,7 +161,7 @@ class _FPSearchBarState extends State<FPSearchBar> {
       ),
       elevation: MaterialStateProperty.all(widget.elevation),
       padding: MaterialStateProperty.all(
-        widget.padding ?? const EdgeInsets.symmetric(horizontal: 16),
+        widget.padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.md),
       ),
       shape: MaterialStateProperty.all(
         (widget.shape is OutlinedBorder ? widget.shape as OutlinedBorder : null) ??
@@ -226,7 +227,7 @@ class _FPSearchSuggestionsState extends State<FPSearchSuggestions> {
         shape: widget.shape,
         clipBehavior: widget.clipBehavior,
         child: Padding(
-          padding: widget.padding ?? const EdgeInsets.all(16),
+          padding: widget.padding ?? const EdgeInsets.all(FPSpacing.lg),
           child: Text(
             'No suggestions found',
             style: theme.textTheme.bodyMedium?.copyWith(
@@ -272,7 +273,7 @@ class _FPSearchSuggestionsState extends State<FPSearchSuggestions> {
       onTap: () {
         widget.onSuggestionSelected?.call(suggestion);
       },
-      contentPadding: widget.padding ?? const EdgeInsets.symmetric(horizontal: 16),
+      contentPadding: widget.padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.md),
       dense: true,
     );
   }
@@ -467,7 +468,7 @@ class _FPSearchWithSuggestionsState extends State<FPSearchWithSuggestions> {
           if (_isLoading)
             widget.loadingWidget ?? const Card(
               child: Padding(
-                padding: EdgeInsets.all(16),
+                padding: EdgeInsets.all(FPSpacing.lg),
                 child: Center(
                   child: CircularProgressIndicator(),
                 ),

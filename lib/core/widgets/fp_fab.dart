@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // FLOATING ACTION BUTTON
@@ -83,8 +84,8 @@ class FPFloatingActionButton extends StatelessWidget {
         materialTapTargetSize: materialTapTargetSize,
         icon: icon != null ? Icon(icon, size: iconSize) : null,
         label: Text(label!),
-        extendedIconLabelSpacing: extendedIconLabelSpacing,
-        extendedPadding: extendedPadding,
+        extendedIconLabelSpacing: extendedIconLabelSpacing ?? FPSpacing.md,
+        extendedPadding: extendedPadding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg),
         tooltip: tooltip,
       );
     }
@@ -346,8 +347,8 @@ class FPExtendedFAB extends StatelessWidget {
       materialTapTargetSize: materialTapTargetSize,
       icon: icon != null ? Icon(icon, size: iconSize) : null,
       label: Text(label),
-      extendedIconLabelSpacing: extendedIconLabelSpacing,
-      extendedPadding: extendedPadding,
+      extendedIconLabelSpacing: extendedIconLabelSpacing ?? FPSpacing.md,
+      extendedPadding: extendedPadding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg),
       tooltip: tooltip,
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // LIST TILE
@@ -82,7 +83,7 @@ class FPListTile extends StatelessWidget {
       selectedColor: selectedColor ?? colorScheme.onPrimaryContainer,
       style: style,
       shape: shape,
-      contentPadding: contentPadding,
+      contentPadding: contentPadding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg, vertical: FPSpacing.sm),
       dense: dense,
       visualDensity: visualDensity,
       focusNode: focusNode,
@@ -258,7 +259,7 @@ class FPListTileWithActions extends StatelessWidget {
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: actions.map((action) => Padding(
-              padding: const EdgeInsets.only(left: 8),
+              padding: const EdgeInsets.only(left: FPSpacing.sm),
               child: action,
             )).toList(),
           ),

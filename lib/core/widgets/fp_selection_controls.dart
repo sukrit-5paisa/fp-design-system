@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 /// FP-themed Checkbox - inherits from Material 3 Checkbox
 class FPCheckbox extends StatelessWidget {
@@ -45,7 +46,7 @@ class FPCheckbox extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           checkbox,
-          const SizedBox(width: 8),
+          const SizedBox(width: FPSpacing.sm),
           Text(
             label!,
             style: theme.textTheme.bodyMedium,
@@ -92,7 +93,7 @@ class FPRadio<T> extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           radio,
-          const SizedBox(width: 8),
+          const SizedBox(width: FPSpacing.sm),
           Text(
             label!,
             style: theme.textTheme.bodyMedium,
@@ -145,7 +146,7 @@ class FPSwitch extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           switchWidget,
-          const SizedBox(width: 8),
+          const SizedBox(width: FPSpacing.sm),
           Text(
             label!,
             style: theme.textTheme.bodyMedium,

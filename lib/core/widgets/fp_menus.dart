@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // DROPDOWN MENU
@@ -62,7 +63,7 @@ class FPDropdownMenu<T> extends StatelessWidget {
           surfaceTintColor,
         ),
         elevation: MaterialStateProperty.all(elevation),
-        padding: MaterialStateProperty.all(padding),
+        padding: MaterialStateProperty.all(padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg, vertical: FPSpacing.sm)),
       ),
       inputDecorationTheme: InputDecorationTheme(
         prefixIconColor: colorScheme.onSurfaceVariant,
@@ -164,11 +165,11 @@ class FPExposedDropdownMenu<T> extends StatelessWidget {
           children: [
             if (item.leadingIcon != null) ...[
               item.leadingIcon!,
-              const SizedBox(width: 8),
+              const SizedBox(width: FPSpacing.sm),
             ],
             Expanded(child: Text(item.label)),
             if (item.trailingIcon != null) ...[
-              const SizedBox(width: 8),
+              const SizedBox(width: FPSpacing.sm),
               item.trailingIcon!,
             ],
           ],
@@ -314,7 +315,7 @@ class FPContextMenu extends StatelessWidget {
         ),
         surfaceTintColor: MaterialStateProperty.all(surfaceTintColor),
         elevation: MaterialStateProperty.all(elevation),
-        padding: MaterialStateProperty.all(padding),
+        padding: MaterialStateProperty.all(padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg, vertical: FPSpacing.sm)),
         shape: shape is OutlinedBorder ? MaterialStateProperty.all(shape as OutlinedBorder) : null,
         minimumSize: MaterialStateProperty.all(
           Size(width ?? 200, height ?? 0),
@@ -368,11 +369,11 @@ class FPMenuHelpers {
           children: [
             if (item.leadingIcon != null) ...[
               item.leadingIcon!,
-              const SizedBox(width: 8),
+              const SizedBox(width: FPSpacing.sm),
             ],
             Expanded(child: Text(item.label)),
             if (item.trailingIcon != null) ...[
-              const SizedBox(width: 8),
+              const SizedBox(width: FPSpacing.sm),
               item.trailingIcon!,
             ],
           ],
@@ -410,11 +411,11 @@ class FPMenuHelpers {
           children: [
             if (item.leadingIcon != null) ...[
               item.leadingIcon!,
-              const SizedBox(width: 8),
+              const SizedBox(width: FPSpacing.sm),
             ],
             Expanded(child: Text(item.label)),
             if (item.trailingIcon != null) ...[
-              const SizedBox(width: 8),
+              const SizedBox(width: FPSpacing.sm),
               item.trailingIcon!,
             ],
           ],

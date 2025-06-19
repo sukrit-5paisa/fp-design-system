@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 // ============================================================================
 // DATA TABLE
@@ -98,8 +99,8 @@ class FPDataTable extends StatelessWidget {
         onSelectAll: onSelectAll,
         dataRowHeight: dataRowHeight,
         headingRowHeight: headingRowHeight,
-        horizontalMargin: horizontalMargin,
-        columnSpacing: columnSpacing,
+        horizontalMargin: horizontalMargin ?? FPSpacing.lg,
+        columnSpacing: columnSpacing ?? FPSpacing.lg,
         showCheckboxColumn: showCheckboxColumn,
         showBottomBorder: showBottomBorder,
         border: border,
@@ -245,8 +246,8 @@ class _FPSortableDataTableState extends State<FPSortableDataTable> {
         onSelectAll: widget.onSelectAll,
         dataRowHeight: widget.dataRowHeight,
         headingRowHeight: widget.headingRowHeight,
-        horizontalMargin: widget.horizontalMargin,
-        columnSpacing: widget.columnSpacing,
+        horizontalMargin: widget.horizontalMargin ?? FPSpacing.lg,
+        columnSpacing: widget.columnSpacing ?? FPSpacing.lg,
         showCheckboxColumn: widget.showCheckboxColumn,
         showBottomBorder: widget.showBottomBorder,
         border: widget.border,
@@ -381,8 +382,8 @@ class _FPSelectableDataTableState extends State<FPSelectableDataTable> {
         onSelectAll: _onSelectAll,
         dataRowHeight: widget.dataRowHeight,
         headingRowHeight: widget.headingRowHeight,
-        horizontalMargin: widget.horizontalMargin,
-        columnSpacing: widget.columnSpacing,
+        horizontalMargin: widget.horizontalMargin ?? FPSpacing.lg,
+        columnSpacing: widget.columnSpacing ?? FPSpacing.lg,
         showCheckboxColumn: widget.showCheckboxColumn,
         showBottomBorder: widget.showBottomBorder,
         border: widget.border,

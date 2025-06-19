@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 enum FPButtonVariant { filled, tonal, elevated, outlined, text }
 
@@ -29,8 +30,8 @@ class FPButton extends StatelessWidget {
 
     Widget content = loading
         ? SizedBox(
-            width: 16,
-            height: 16,
+            width: FPSpacing.md,
+            height: FPSpacing.md,
             child: CircularProgressIndicator(
               strokeWidth: 2,
               valueColor: AlwaysStoppedAnimation<Color>(
@@ -43,7 +44,7 @@ class FPButton extends StatelessWidget {
             children: [
               if (icon != null) ...[
                 Icon(icon, size: 18, color: _getTextColor(colorScheme)),
-                const SizedBox(width: 8),
+                const SizedBox(width: FPSpacing.sm),
               ],
               Text(
                 label,
@@ -161,8 +162,8 @@ class FPElevatedButton extends StatelessWidget {
       ),
       child: isLoading
           ? const SizedBox(
-              width: 20,
-              height: 20,
+              width: FPSpacing.md,
+              height: FPSpacing.md,
               child: CircularProgressIndicator(strokeWidth: 2),
             )
           : Row(
@@ -170,7 +171,7 @@ class FPElevatedButton extends StatelessWidget {
               children: [
                 if (icon != null) ...[
                   Icon(icon, size: 18),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: FPSpacing.sm),
                 ],
                 Text(label),
               ],
@@ -212,8 +213,8 @@ class FPFilledButton extends StatelessWidget {
       ),
       child: isLoading
           ? const SizedBox(
-              width: 20,
-              height: 20,
+              width: FPSpacing.md,
+              height: FPSpacing.md,
               child: CircularProgressIndicator(strokeWidth: 2),
             )
           : Row(
@@ -221,7 +222,7 @@ class FPFilledButton extends StatelessWidget {
               children: [
                 if (icon != null) ...[
                   Icon(icon, size: 18),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: FPSpacing.sm),
                 ],
                 Text(label),
               ],
@@ -265,8 +266,8 @@ class FPOutlinedButton extends StatelessWidget {
       ),
       child: isLoading
           ? const SizedBox(
-              width: 20,
-              height: 20,
+              width: FPSpacing.md,
+              height: FPSpacing.md,
               child: CircularProgressIndicator(strokeWidth: 2),
             )
           : Row(
@@ -274,7 +275,7 @@ class FPOutlinedButton extends StatelessWidget {
               children: [
                 if (icon != null) ...[
                   Icon(icon, size: 18),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: FPSpacing.sm),
                 ],
                 Text(label),
               ],
@@ -315,8 +316,8 @@ class FPTextButton extends StatelessWidget {
       ),
       child: isLoading
           ? const SizedBox(
-              width: 20,
-              height: 20,
+              width: FPSpacing.md,
+              height: FPSpacing.md,
               child: CircularProgressIndicator(strokeWidth: 2),
             )
           : Row(
@@ -324,7 +325,7 @@ class FPTextButton extends StatelessWidget {
               children: [
                 if (icon != null) ...[
                   Icon(icon, size: 18),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: FPSpacing.sm),
                 ],
                 Text(label),
               ],

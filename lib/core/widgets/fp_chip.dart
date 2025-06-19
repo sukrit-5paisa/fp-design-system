@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 enum FPChipVariant { assist, filter, input, suggestion, choice }
 
@@ -84,7 +85,7 @@ class FPChip extends StatelessWidget {
           labelStyle: theme.textTheme.labelMedium?.copyWith(
             color: labelColor ?? colorScheme.onSurfaceVariant,
           ),
-          padding: padding,
+          padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.md, vertical: FPSpacing.xs),
           side: side,
           shape: RoundedRectangleBorder(
             borderRadius: borderRadius ?? BorderRadius.circular(8),
@@ -105,7 +106,7 @@ class FPChip extends StatelessWidget {
           labelStyle: theme.textTheme.labelMedium?.copyWith(
             color: labelColor ?? colorScheme.onSurfaceVariant,
           ),
-          padding: padding,
+          padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.md, vertical: FPSpacing.xs),
           side: side,
           shape: RoundedRectangleBorder(
             borderRadius: borderRadius ?? BorderRadius.circular(8),
@@ -130,7 +131,7 @@ class FPChip extends StatelessWidget {
             color: labelColor ?? colorScheme.onSurfaceVariant,
           ),
           deleteIconColor: deleteIconColor ?? colorScheme.onSurfaceVariant,
-          padding: padding,
+          padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.md, vertical: FPSpacing.xs),
           side: side,
           shape: RoundedRectangleBorder(
             borderRadius: borderRadius ?? BorderRadius.circular(8),
@@ -149,7 +150,7 @@ class FPChip extends StatelessWidget {
           labelStyle: theme.textTheme.labelMedium?.copyWith(
             color: labelColor ?? colorScheme.onSurfaceVariant,
           ),
-          padding: padding,
+          padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.md, vertical: FPSpacing.xs),
           side: side,
           shape: RoundedRectangleBorder(
             borderRadius: borderRadius ?? BorderRadius.circular(8),
@@ -170,7 +171,7 @@ class FPChip extends StatelessWidget {
           labelStyle: theme.textTheme.labelMedium?.copyWith(
             color: labelColor ?? colorScheme.onSurfaceVariant,
           ),
-          padding: padding,
+          padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.md, vertical: FPSpacing.xs),
           side: side,
           shape: RoundedRectangleBorder(
             borderRadius: borderRadius ?? BorderRadius.circular(8),

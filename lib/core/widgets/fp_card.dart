@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 enum FPCardVariant { elevated, filled, outlined }
 
@@ -33,7 +34,7 @@ class FPCard extends StatelessWidget {
 
     Widget cardContent = padding != null
         ? Padding(padding: padding!, child: child)
-        : child;
+        : Padding(padding: const EdgeInsets.all(FPSpacing.lg), child: child);
 
     if (onTap != null) {
       cardContent = InkWell(
@@ -112,12 +113,12 @@ class FPCardContent extends StatelessWidget {
       children: [
         if (title != null || leading != null || trailing != null)
           Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(FPSpacing.lg),
             child: Row(
               children: [
                 if (leading != null) ...[
                   leading!,
-                  const SizedBox(width: 16),
+                  const SizedBox(width: FPSpacing.lg),
                 ],
                 Expanded(
                   child: Column(
@@ -129,7 +130,7 @@ class FPCardContent extends StatelessWidget {
                           style: textTheme.titleMedium,
                         ),
                       if (subtitle != null) ...[
-                        const SizedBox(height: 4),
+                        const SizedBox(height: FPSpacing.xs),
                         Text(
                           subtitle!,
                           style: textTheme.bodyMedium?.copyWith(
@@ -148,12 +149,12 @@ class FPCardContent extends StatelessWidget {
           const Divider(height: 1),
         if (actions != null)
           Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(FPSpacing.lg),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: actions!
                   .map((action) => Padding(
-                        padding: const EdgeInsets.only(left: 8),
+                        padding: const EdgeInsets.only(left: FPSpacing.sm),
                         child: action,
                       ))
                   .toList(),

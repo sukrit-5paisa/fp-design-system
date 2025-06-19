@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/theme/spacing.dart';
 
 /// FP Snackbar
 class FPSnackBar extends StatelessWidget {
@@ -59,8 +60,8 @@ class FPSnackBar extends StatelessWidget {
       duration: duration ?? const Duration(seconds: 4),
       backgroundColor: backgroundColor ?? colorScheme.surface,
       elevation: elevation,
-      margin: margin,
-      padding: padding,
+      margin: margin ?? const EdgeInsets.all(FPSpacing.lg),
+      padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg, vertical: FPSpacing.md),
       shape: shape,
       behavior: behavior ?? SnackBarBehavior.floating,
     );
@@ -116,8 +117,8 @@ class FPSnackBarWithAction extends StatelessWidget {
       duration: duration ?? const Duration(seconds: 4),
       backgroundColor: backgroundColor ?? colorScheme.surface,
       elevation: elevation,
-      margin: margin,
-      padding: padding,
+      margin: margin ?? const EdgeInsets.all(FPSpacing.lg),
+      padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg, vertical: FPSpacing.md),
       shape: shape,
       behavior: behavior ?? SnackBarBehavior.floating,
     );
@@ -155,8 +156,8 @@ class FPSnackBars {
         backgroundColor: backgroundColor,
         behavior: behavior ?? SnackBarBehavior.floating,
         elevation: elevation,
-        margin: margin,
-        padding: padding,
+        margin: margin ?? const EdgeInsets.all(FPSpacing.lg),
+        padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg, vertical: FPSpacing.md),
         shape: shape,
       ),
     );
@@ -189,8 +190,8 @@ class FPSnackBars {
         backgroundColor: backgroundColor,
         behavior: behavior ?? SnackBarBehavior.floating,
         elevation: elevation,
-        margin: margin,
-        padding: padding,
+        margin: margin ?? const EdgeInsets.all(FPSpacing.lg),
+        padding: padding ?? const EdgeInsets.symmetric(horizontal: FPSpacing.lg, vertical: FPSpacing.md),
         shape: shape,
       ),
     );
