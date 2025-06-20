@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 import '../core/theme/colors.dart' show ColorsToken, AccentColors;
 import '../core/theme/spacing.dart';
 import '../core/theme/typography.dart';
-
-@WidgetbookUseCase(name: 'Color Palette', type: ColorPaletteShowcase)
-Widget colorPaletteUseCase(BuildContext context) {
-  return const ColorPaletteShowcase();
-}
 
 class ColorPaletteShowcase extends StatefulWidget {
   const ColorPaletteShowcase({super.key});

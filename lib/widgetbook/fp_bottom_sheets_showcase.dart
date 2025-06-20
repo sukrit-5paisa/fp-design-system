@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 import '../core/widgets/fp_button.dart';
 import '../core/widgets/fp_bottom_sheets.dart';
 
-@WidgetbookUseCase(name: 'FP Bottom Sheets', type: FPBottomSheetsShowcase)
 Widget fpBottomSheetsShowcase(BuildContext context) {
   return const FPBottomSheetsShowcase();
 }

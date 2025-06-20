@@ -30,6 +30,18 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
   final Color surfaceDim;
   final Color surfaceDimmer;
 
+  // Button colors
+  final Color buttonPrimary;
+  final Color buttonOnPrimary;
+  final Color buttonSecondary;
+  final Color buttonOnSecondary;
+  final Color buttonTertiary;
+  final Color buttonOnTertiary;
+  final Color buttonCritical;
+  final Color buttonOnCritical;
+  final Color buttonPositive;
+  final Color buttonOnPositive;
+
   const CustomThemeExtension({
     required this.positive,
     required this.critical,
@@ -51,6 +63,16 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     required this.surfaceBright,
     required this.surfaceDim,
     required this.surfaceDimmer,
+    required this.buttonPrimary,
+    required this.buttonOnPrimary,
+    required this.buttonSecondary,
+    required this.buttonOnSecondary,
+    required this.buttonTertiary,
+    required this.buttonOnTertiary,
+    required this.buttonCritical,
+    required this.buttonOnCritical,
+    required this.buttonPositive,
+    required this.buttonOnPositive,
   });
 
   @override
@@ -75,6 +97,16 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     Color? surfaceBright,
     Color? surfaceDim,
     Color? surfaceDimmer,
+    Color? buttonPrimary,
+    Color? buttonOnPrimary,
+    Color? buttonSecondary,
+    Color? buttonOnSecondary,
+    Color? buttonTertiary,
+    Color? buttonOnTertiary,
+    Color? buttonCritical,
+    Color? buttonOnCritical,
+    Color? buttonPositive,
+    Color? buttonOnPositive,
   }) {
     return CustomThemeExtension(
       positive: positive ?? this.positive,
@@ -97,6 +129,16 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       surfaceBright: surfaceBright ?? this.surfaceBright,
       surfaceDim: surfaceDim ?? this.surfaceDim,
       surfaceDimmer: surfaceDimmer ?? this.surfaceDimmer,
+      buttonPrimary: buttonPrimary ?? this.buttonPrimary,
+      buttonOnPrimary: buttonOnPrimary ?? this.buttonOnPrimary,
+      buttonSecondary: buttonSecondary ?? this.buttonSecondary,
+      buttonOnSecondary: buttonOnSecondary ?? this.buttonOnSecondary,
+      buttonTertiary: buttonTertiary ?? this.buttonTertiary,
+      buttonOnTertiary: buttonOnTertiary ?? this.buttonOnTertiary,
+      buttonCritical: buttonCritical ?? this.buttonCritical,
+      buttonOnCritical: buttonOnCritical ?? this.buttonOnCritical,
+      buttonPositive: buttonPositive ?? this.buttonPositive,
+      buttonOnPositive: buttonOnPositive ?? this.buttonOnPositive,
     );
   }
 
@@ -124,6 +166,16 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       surfaceBright: Color.lerp(surfaceBright, other.surfaceBright, t)!,
       surfaceDim: Color.lerp(surfaceDim, other.surfaceDim, t)!,
       surfaceDimmer: Color.lerp(surfaceDimmer, other.surfaceDimmer, t)!,
+      buttonPrimary: Color.lerp(buttonPrimary, other.buttonPrimary, t)!,
+      buttonOnPrimary: Color.lerp(buttonOnPrimary, other.buttonOnPrimary, t)!,
+      buttonSecondary: Color.lerp(buttonSecondary, other.buttonSecondary, t)!,
+      buttonOnSecondary: Color.lerp(buttonOnSecondary, other.buttonOnSecondary, t)!,
+      buttonTertiary: Color.lerp(buttonTertiary, other.buttonTertiary, t)!,
+      buttonOnTertiary: Color.lerp(buttonOnTertiary, other.buttonOnTertiary, t)!,
+      buttonCritical: Color.lerp(buttonCritical, other.buttonCritical, t)!,
+      buttonOnCritical: Color.lerp(buttonOnCritical, other.buttonOnCritical, t)!,
+      buttonPositive: Color.lerp(buttonPositive, other.buttonPositive, t)!,
+      buttonOnPositive: Color.lerp(buttonOnPositive, other.buttonOnPositive, t)!,
     );
   }
 
@@ -148,6 +200,16 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     surfaceBright: ColorsToken.materialLight.surfaceBright,
     surfaceDim: ColorsToken.materialLight.surfaceDim,
     surfaceDimmer: ColorsToken.materialLight.surfaceDimmer,
+    buttonPrimary: ColorsToken.primary.primary,
+    buttonOnPrimary: ColorsToken.primary.onPrimary,
+    buttonSecondary: ColorsToken.secondary.primary,
+    buttonOnSecondary: ColorsToken.secondary.onPrimary,
+    buttonTertiary: ColorsToken.tertiary.primary,
+    buttonOnTertiary: ColorsToken.tertiary.onPrimary,
+    buttonCritical: ColorsToken.system.critical.primary,
+    buttonOnCritical: ColorsToken.system.critical.onPrimary,
+    buttonPositive: ColorsToken.system.positive.primary,
+    buttonOnPositive: ColorsToken.system.positive.onPrimary,
   );
 
   static final dark = CustomThemeExtension(
@@ -171,5 +233,15 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
     surfaceBright: ColorsToken.materialDark.surfaceBright,
     surfaceDim: ColorsToken.materialDark.surfaceDim,
     surfaceDimmer: ColorsToken.materialDark.surfaceDimmer,
+    buttonPrimary: ColorsToken.primaryDark.primary,
+    buttonOnPrimary: ColorsToken.primaryDark.onPrimary,
+    buttonSecondary: ColorsToken.secondaryDark.primary,
+    buttonOnSecondary: ColorsToken.secondaryDark.onPrimary,
+    buttonTertiary: ColorsToken.tertiary.primary,
+    buttonOnTertiary: ColorsToken.tertiary.onPrimary,
+    buttonCritical: ColorsToken.system.critical.primary,
+    buttonOnCritical: ColorsToken.system.critical.onPrimary,
+    buttonPositive: ColorsToken.system.positive.primary,
+    buttonOnPositive: ColorsToken.system.positive.onPrimary,
   );
 } 

@@ -26,6 +26,7 @@ import 'fp_data_tables_showcase.dart';
 import 'fp_navigation_showcase.dart';
 import 'fp_expansion_panel_showcase.dart';
 import 'fp_menus_showcase.dart';
+import 'custom_button_showcase.dart';
 
 void main() {
   runApp(const FPDesignWidgetbook());
@@ -291,6 +292,15 @@ class FPDesignWidgetbook extends StatelessWidget {
                 WidgetbookUseCase(
                   name: 'FP Menus',
                   builder: (context) => const FPMenusShowcase(),
+                ),
+              ],
+            ),
+            WidgetbookComponent(
+              name: 'Custom Button',
+              useCases: [
+                WidgetbookUseCase(
+                  name: 'All Variants',
+                  builder: customButtonAllVariantsShowcase,
                 ),
               ],
             ),

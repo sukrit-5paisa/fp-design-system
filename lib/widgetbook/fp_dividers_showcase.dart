@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 import '../core/widgets/fp_dividers.dart';
 
-@WidgetbookUseCase(name: 'FP Dividers', type: FPDividersShowcase)
 Widget fpDividersShowcase(BuildContext context) {
   return const FPDividersShowcase();
 }

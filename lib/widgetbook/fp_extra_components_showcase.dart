@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 import '../core/widgets/fp_button.dart';
 import '../core/widgets/fp_progress_indicators.dart';
 import '../core/widgets/fp_bottom_sheets.dart';
@@ -8,7 +7,6 @@ import '../core/widgets/fp_snackbars.dart';
 import '../core/widgets/fp_dividers.dart';
 import '../core/widgets/fp_tooltips.dart';
 
-@WidgetbookUseCase(name: 'FP Extra Components', type: FPExtraComponentsShowcase)
 Widget fpExtraComponentsShowcase(BuildContext context) {
   return const FPExtraComponentsShowcase();
 }

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 import '../core/widgets/fp_button.dart';
 import '../core/widgets/fp_snackbars.dart';
 
-@WidgetbookUseCase(name: 'FP Snackbars', type: FPSnackbarsShowcase)
 Widget fpSnackbarsShowcase(BuildContext context) {
   return const FPSnackbarsShowcase();
 }

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:widgetbook_annotation/widgetbook_annotation.dart';
 import '../core/widgets/fp_button.dart';
 import '../core/widgets/fp_dialogs.dart';
 
-@WidgetbookUseCase(name: 'FP Dialogs', type: FPDialogsShowcase)
 Widget fpDialogsShowcase(BuildContext context) {
   return const FPDialogsShowcase();
 }
